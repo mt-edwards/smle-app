@@ -1,0 +1,44 @@
+---
+title: "Readme"
+author: "Matthew Edwards"
+date: "12/06/2018"
+output: html_document
+---
+# Application
+
+This R project estimates the parameters of a diagonal VARMA model with axially symmetric innovations for global climate simulation data via stepwise maximum likelihood estimation.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+Create a project folder with subfolders: 
+
+- data
+- data_ncdf
+- data_raw
+- models
+- plots
+- scripts
+
+Place the NetCDF global climate simulation data files in the *data_raw* folder. These NetCDF files are available at [Earth System Grid](https://www.earthsystemgrid.org/dataset/ucar.cgd.ccsm4.CESM_CAM5_BGC_LE.atm.proc.monthly_ave.TREFHT.html). Place the script files in the *scripts* folder. Create an R project in the project directory. 
+
+### Scripts
+
+Open the R project. All the scripts are self contained. Run all the scripts in the following order
+
+1. load_data.R
+2. temp_model.R
+3. temp_data.R
+4. temp_ncdf.R
+5. long_model.R
+6. long_data.R
+7. lat_model.R
+8. lat_data.R
+9. pgram_plot.R 
+
+### Output
+
+All the application plots are available in data_ncdf and plots. The data_ncdf plot requried the download of the NetCDF viewer [Panoply](https://www.giss.nasa.gov/tools/panoply/download/). Details of the marginal models are available in models.

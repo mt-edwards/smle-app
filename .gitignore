@@ -1,0 +1,6 @@
+.DS_Store
+data/
+data_ncdf/
+data_raw/
+models/
+plots/
